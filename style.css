@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background-image: url(./img/background_top.svg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-color: #E0E8FF;
+}
+
+.container{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+}
+
+.container h1{
+    font-weight: 900;
+    font-size: 22px;
+    color: #1F2E55;
+    margin: 32px 0px 16px 0px;
+}
+
+.container p{
+    font-weight: 500;
+    font-size: 15px;
+    color: #717FA6;
+    line-height: 25px;
+}
+
+.container__price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F7F9FF;
+    border-radius: 11px;
+    padding: 16px;
+    margin: 24px;
+}
+
+
+.container__price h2{
+    font-weight: 900;
+    font-size: 14px;
+    color: #1F2E55;
+}
+
+.container__price p{
+    font-size: 14px;
+}
+
+.container__price a{
+    font-weight: 700;
+    font-size: 13px;
+    color: #382AE1;
+    text-underline-offset: 1.4px;
+}
+
+#buy{
+    font-weight: 900;
+    font-size: 15px;
+    color: #fff;
+    background-color: #382AE1;
+    text-decoration: none;
+    margin: 0px 24px 24px 24px;
+    padding: 15px;
+    border-radius: 11px;
+}
+
+#cancel{
+    font-weight: 900;
+    font-size: 15px;
+    color: #717FA6;
+    text-decoration: none;
+    margin-bottom: 32px;
+}
+
+@media (min-width:700px){
+    body{
+        padding: 102px 0px;
+    }
+    .container h1{
+        font-size: 28px;
+        margin: 45px 0px 17px 0px;
+    }
+
+    .container p{
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0px 48px;
+    }
+
+    .container__price{
+        margin: 20px 48px 32px 48px;
+        padding: 25px;
+    }
+
+    .container__price p{
+        font-size: 16px;
+    }
+
+    .container__price a:hover{
+        color: #766CF1;
+    }
+
+    #buy{
+        margin: 0 48px 32px 48px;
+    }
+
+    #buy:hover{
+        background-color: #766CF1;
+    }
+
+    #cancel{
+        margin-bottom: 32px;
+    }
+
+    #cancel:hover{
+        color: #1F2E55;
+    }
+}
